@@ -19,6 +19,9 @@ const BLUE_HIGANBANA_ROLE_ID = process.env.BLUE_HIGANBANA_ROLE_ID;
 const PINK_HIGANBANA_ROLE_ID = process.env.PINK_HIGANBANA_ROLE_ID;
 const PORT = process.env.PORT || 3000;
 
+//クールダウン
+const cooldowns = new Map();
+
 // 花データ読み込み
 const flowers = JSON.parse(fs.readFileSync('./flowers_with_rarity.json', 'utf-8'));
 
@@ -104,8 +107,23 @@ client.on('messageCreate', async message => {
   if (message.channel.id !== ALLOWED_CHANNEL_ID) return;
   if (!message.content.includes('花ガチャ')) return;
 
-  const flower = gacha();
   const userId = message.author.id;
+  const now = Date.now();
+  const cooldownAmount = 30 * 1000; // 30秒
+
+  if (cooldowns.has(userId)) {
+    const expirationTime = cooldowns.get(userId) + cooldownAmount;
+    if (now < expirationTime) {
+      const timeLeft = ((expirationTime - now) / 1000).toFixed(1);
+      return message.reply(`⌛ ガチャはあと ${timeLeft} 秒後に引けるよ！`);
+    }
+  }
+
+  cooldowns.set(userId, now);
+  setTimeout(() => cooldowns.delete(userId), cooldownAmount);
+
+  // --- 以下、元の処理まるごと移動 ---
+  const flower = gacha();
 
   try {
     await db.run('INSERT OR IGNORE INTO user_flowers (userId, flowerId) VALUES (?, ?)', userId, flower.id);
@@ -113,7 +131,6 @@ client.on('messageCreate', async message => {
     console.error('DBエラー:', e);
   }
 
-  // XP加算ロジック
   const xpMap = {
     rare: 50,
     epic: 100,
@@ -131,7 +148,6 @@ client.on('messageCreate', async message => {
     `, userId, gainedXp, gainedXp);
   }
 
-  // 埋め込み送信
   const embed = new EmbedBuilder()
     .setTitle('🌸 花ガチャ 結果！')
     .setDescription(`${message.author} が引いた花：**${flower.name}**\nレアリティ：\`${flower.rarity}\`` +
@@ -141,7 +157,6 @@ client.on('messageCreate', async message => {
 
   await message.reply({ embeds: [embed] });
 
-  // 彼岸花ロール自動付与
   if (flower.rarity === 'extrasupermythic') {
     const member = await message.guild.members.fetch(userId);
 
