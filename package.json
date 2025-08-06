@@ -1,17 +1,14 @@
 {
-  "name": "discord-gacha-bot",
+  "name": "discord-flower-gacha",
   "version": "1.0.0",
-  "description": "Discord bot with PostgreSQL and external JSON gacha list",
-  "main": "index.js",
   "type": "module",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "author": "わたあめえ",
-  "license": "MIT",
   "dependencies": {
-    "discord.js": "^14.11.0",
-    "pg": "^8.11.0",
-    "dotenv": "^16.3.1"
+    "better-sqlite3": "^8.3.0",
+    "discord.js": "^14.7.1",
+    "express": "^4.18.2"
   }
 }
