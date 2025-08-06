@@ -132,10 +132,10 @@ client.on('messageCreate', async message => {
   }
 
   const xpMap = {
-    rare: 50,
-    epic: 100,
-    legend: 300,
-    extramythic: 1000,
+    rare: 10,
+    epic: 30,
+    legend: 50,
+    extramythic: 100,
     extrasupermythic: 2000
   };
   const gainedXp = xpMap[flower.rarity] || 0;
