@@ -144,6 +144,14 @@ client.on('messageCreate', async message => {
       await message.channel.send(`🌸 ${message.author} に **ピンクの彼岸花** ロールを付与しました！`);
     }
   }
+  // 花ガチャ処理の後（insertFlowerとかXP加算終わったあと）
+
+const { flowerIds } = await getStatus(userId);
+const totalFlowers = flowers.length;
+
+if (flowerIds.length === totalFlowers) {
+  await message.channel.send(`🎉 おめでとう!! 全クリだよ！ 🎉`);
+}
 });
 
 client.login(TOKEN);
