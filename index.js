@@ -69,7 +69,11 @@ client.on('interactionCreate', async interaction => {
       .setTitle(`${interaction.user.username} のガチャ状況`)
       .setDescription(`🌸 所持数: ${flowerIds.length} / ${total}（${percent}%）\n🎖️ XP: ${xp}`)
       .setColor(0x77ccff);
-    await interaction.reply({ embeds: [embed], ephemeral: true });
+    await interaction.reply({
+      embeds: [embed],
+      flags: 64
+    });
+
   }
 
   if (interaction.commandName === 'resetdb') {
