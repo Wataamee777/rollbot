@@ -1,90 +1,99 @@
+import { Client, GatewayIntentBits, Partials, EmbedBuilder } from 'discord.js';
 import express from 'express';
-import { Client, GatewayIntentBits, EmbedBuilder } from 'discord.js';
-import { Pool } from 'pg';
-import fs from 'fs/promises';
-import dotenv from 'dotenv';
-dotenv.config();
+import fs from 'fs';
+import sqlite3 from 'sqlite3';
+import { open } from 'sqlite';
 
+const TOKEN = 'YOUR_DISCORD_BOT_TOKEN';
+const GUILD_ID = 'YOUR_GUILD_ID';
+const ALLOWED_CHANNEL_ID = 'YOUR_CHANNEL_ID'; // 花ガチャを許可するチャンネルID
+const RARE_ROLE_ID = 'YOUR_RARE_ROLE_ID'; // 激レア報酬ロールID
+
+// flower JSON
+const flowers = JSON.parse(fs.readFileSync('./flowers_with_rarity.json', 'utf-8'));
+
+// Express
 const app = express();
-const PORT = process.env.PORT || 3000;
+app.get('/', (_, res) => res.send('Hello World!'));
+app.listen(process.env.PORT || 3000, () => console.log('🌐 Webサーバー起動'));
 
-// Discordクライアント準備
+// DB
+const db = await open({
+  filename: './db.sqlite',
+  driver: sqlite3.Database
+});
+await db.exec(`CREATE TABLE IF NOT EXISTS user_flowers (
+  userId TEXT,
+  flowerId INTEGER,
+  UNIQUE(userId, flowerId)
+)`);
+
+// Bot
 const client = new Client({
   intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent],
+  partials: [Partials.Channel]
 });
 
-let ingredients = [];
-
-// PostgreSQLプール作成
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-  ssl: { rejectUnauthorized: false },
-});
-
-// DB初期化
-async function initDB() {
-  const query = `
-    CREATE TABLE IF NOT EXISTS user_gacha (
-      user_id TEXT NOT NULL,
-      item TEXT NOT NULL,
-      PRIMARY KEY(user_id, item)
-    )
-  `;
-  await pool.query(query);
+// 🎰 ガチャ関数
+function gacha() {
+  const rand = Math.random() * 100;
+  let sum = 0;
+  for (const flower of flowers) {
+    sum += flower.prob;
+    if (rand <= sum) return flower;
+  }
+  return flowers[flowers.length - 1]; // fallback
 }
 
-// 食材リスト読み込み
-async function loadIngredients() {
-  const data = await fs.readFile('./ingredients.json', 'utf8');
-  ingredients = JSON.parse(data);
-}
-
-// Expressルート：Hello World返すだけ
-app.get('/', (req, res) => {
-  res.send('Hello World');
+// 🌸 status確認コマンド
+client.on('interactionCreate', async interaction => {
+  if (!interaction.isChatInputCommand()) return;
+  if (interaction.commandName === 'status') {
+    const userId = interaction.user.id;
+    const rows = await db.all('SELECT flowerId FROM user_flowers WHERE userId = ?', userId);
+    const owned = rows.map(r => r.flowerId);
+    const total = flowers.length;
+    const percent = ((owned.length / total) * 100).toFixed(2);
+    const embed = new EmbedBuilder()
+      .setTitle(`${interaction.user.username}のガチャ状況`)
+      .setDescription(`所持数: ${owned.length} / ${total}（${percent}%）`)
+      .setColor(0x77ccff);
+    await interaction.reply({ embeds: [embed], ephemeral: true });
+  }
 });
 
-client.once('ready', async () => {
-  await loadIngredients();
-  await initDB();
-  console.log(`Logged in as ${client.user.tag}, loaded ${ingredients.length} items.`);
-});
-
-client.on('messageCreate', async (message) => {
+// 📝 「花ガチャ」メッセージに反応
+client.on('messageCreate', async message => {
   if (message.author.bot) return;
-  if (!message.content.includes('料理ガチャ')) return;
+  if (message.channel.id !== ALLOWED_CHANNEL_ID) return;
+  if (!message.content.includes('花ガチャ')) return;
 
-  const choice = ingredients[Math.floor(Math.random() * ingredients.length)];
+  const flower = gacha();
 
+  // 保存
   try {
-    await pool.query(
-      'INSERT INTO user_gacha (user_id, item) VALUES ($1, $2) ON CONFLICT DO NOTHING',
-      [message.author.id, choice]
-    );
-  } catch (err) {
-    console.error('DB error:', err);
+    await db.run('INSERT OR IGNORE INTO user_flowers (userId, flowerId) VALUES (?, ?)', message.author.id, flower.id);
+  } catch (e) {
+    console.error('DBエラー:', e);
   }
 
-  let count = 0;
-  try {
-    const res = await pool.query('SELECT COUNT(*) FROM user_gacha WHERE user_id = $1', [message.author.id]);
-    count = parseInt(res.rows[0].count, 10);
-  } catch (err) {
-    console.error('DB count error:', err);
-  }
-
+  // 埋め込み返信
   const embed = new EmbedBuilder()
-    .setTitle('🎲 料理ガチャ結果 🎲')
-    .setDescription(`【食材】${choice}\n${message.author}\nあなたの所持数: ${count} 個`)
-    .setColor(0xffcc00);
+    .setTitle('🌸 花ガチャ 結果！')
+    .setDescription(`${message.author} が引いた花：**${flower.name}**\nレアリティ：\`${flower.rarity}\``)
+    .setColor(0xffc0cb)
+    .setTimestamp();
 
-  await message.channel.send({ embeds: [embed] });
+  await message.reply({ embeds: [embed] });
+
+  // 激レアならロール付与
+  if (['extrasupermythic'].includes(flower.rarity)) {
+    const member = await message.guild.members.fetch(message.author.id);
+    if (!member.roles.cache.has(RARE_ROLE_ID)) {
+      await member.roles.add(RARE_ROLE_ID).catch(console.error);
+      await message.channel.send(`🎉 ${message.author} に特別ロールを付与しました！`);
+    }
+  }
 });
 
-// Expressサーバー起動
-app.listen(PORT, () => {
-  console.log(`Express server running on port ${PORT}`);
-});
-
-// Discordログイン
-client.login(process.env.DISCORD_TOKEN);
+client.login(TOKEN);
