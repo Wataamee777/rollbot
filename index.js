@@ -115,7 +115,6 @@ client.on('messageCreate', async message => {
 
   // XP加算ロジック
   const xpMap = {
-    uncommon: 10,
     rare: 50,
     epic: 100,
     legend: 300,
