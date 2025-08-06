@@ -2595,12 +2595,12 @@
     "id": 433,
     "name": "青の彼岸花",
     "rarity": "extrasupermythic",
-    "prob": 0.5
+    "prob": 0.0000000001
   },
   {
     "id": 434,
     "name": "ピンクの彼岸花",
     "rarity": "extrasupermythic",
-    "prob": 0.5
+    "prob": 0.0000000001
   }
 ]
