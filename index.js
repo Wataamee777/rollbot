@@ -5,8 +5,7 @@ import {
 } from 'discord.js';
 import express from 'express';
 import fs from 'fs';
-import sqlite3 from 'sqlite3';
-import { open } from 'sqlite';
+import { insertFlower, addXp, getStatus, resetDb } from './db.js';
 
 // 環境変数
 const TOKEN = process.env.TOKEN;
