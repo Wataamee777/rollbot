@@ -5,54 +5,38 @@ import {
 } from 'discord.js';
 import express from 'express';
 import fs from 'fs';
-import { insertFlower, addXp, getStatus, resetDb } from './db.js';
+import {
+  insertFlower, addXp, getStatus, resetDb
+} from './db.js';
 
-// 環境変数
+// 🌱 環境変数
 const TOKEN = process.env.TOKEN;
 const CLIENT_ID = process.env.CLIENT_ID;
 const GUILD_ID = process.env.GUILD_ID;
 const ALLOWED_CHANNEL_ID = process.env.ALLOWED_CHANNEL_ID;
-const RARE_ROLE_ID = process.env.RARE_ROLE_ID;
 const ADMIN_ID = process.env.ADMIN_ID || '1099098129338466385';
 const BLUE_HIGANBANA_ROLE_ID = process.env.BLUE_HIGANBANA_ROLE_ID;
 const PINK_HIGANBANA_ROLE_ID = process.env.PINK_HIGANBANA_ROLE_ID;
 const PORT = process.env.PORT || 3000;
 
-//クールダウン
+// 🕒 レート制限
 const cooldowns = new Map();
 
-// 花データ読み込み
+// 🌸 花データ読み込み
 const flowers = JSON.parse(fs.readFileSync('./flowers_with_rarity.json', 'utf-8'));
 
-// Expressサーバー（Render対応）
+// 🌐 Webサーバー（Render用）
 const app = express();
 app.get('/', (_, res) => res.send('Hello World!'));
 app.listen(PORT, () => console.log(`🌐 Webサーバー起動 ポート: ${PORT}`));
 
-// SQLite DB準備
-const db = await open({
-  filename: './db.sqlite',
-  driver: sqlite3.Database
-});
-await db.exec(`
-  CREATE TABLE IF NOT EXISTS user_flowers (
-    userId TEXT,
-    flowerId INTEGER,
-    UNIQUE(userId, flowerId)
-  );
-  CREATE TABLE IF NOT EXISTS user_xp (
-    userId TEXT PRIMARY KEY,
-    xp INTEGER DEFAULT 0
-  );
-`);
-
-// Discord Botクライアント
+// 💬 Discord Botクライアント
 const client = new Client({
   intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent],
   partials: [Partials.Channel]
 });
 
-// スラッシュコマンド登録
+// 🛠️ スラッシュコマンド登録
 const commands = [
   new SlashCommandBuilder().setName('status').setDescription('自分のガチャ状況を確認'),
   new SlashCommandBuilder().setName('resetdb').setDescription('（管理者専用）DBを全リセットする')
@@ -60,7 +44,7 @@ const commands = [
 const rest = new REST({ version: '10' }).setToken(TOKEN);
 await rest.put(Routes.applicationGuildCommands(CLIENT_ID, GUILD_ID), { body: commands });
 
-// ガチャロジック
+// 🎰 ガチャロジック
 function gacha() {
   const rand = Math.random() * 100;
   let sum = 0;
@@ -68,25 +52,22 @@ function gacha() {
     sum += flower.prob;
     if (rand <= sum) return flower;
   }
-  return flowers[flowers.length - 1]; // fallback
+  return flowers[flowers.length - 1];
 }
 
-// スラッシュコマンド処理
+// 🧾 スラッシュコマンド処理
 client.on('interactionCreate', async interaction => {
   if (!interaction.isChatInputCommand()) return;
   const userId = interaction.user.id;
 
   if (interaction.commandName === 'status') {
-    const rows = await db.all('SELECT flowerId FROM user_flowers WHERE userId = ?', userId);
-    const owned = rows.map(r => r.flowerId);
+    const { flowerIds, xp } = await getStatus(userId);
     const total = flowers.length;
-    const percent = ((owned.length / total) * 100).toFixed(2);
-    const xpRow = await db.get('SELECT xp FROM user_xp WHERE userId = ?', userId);
-    const xp = xpRow?.xp || 0;
+    const percent = ((flowerIds.length / total) * 100).toFixed(2);
 
     const embed = new EmbedBuilder()
       .setTitle(`${interaction.user.username} のガチャ状況`)
-      .setDescription(`🌸 所持数: ${owned.length} / ${total}（${percent}%）\n🎖️ XP: ${xp}`)
+      .setDescription(`🌸 所持数: ${flowerIds.length} / ${total}（${percent}%）\n🎖️ XP: ${xp}`)
       .setColor(0x77ccff);
     await interaction.reply({ embeds: [embed], ephemeral: true });
   }
@@ -95,12 +76,12 @@ client.on('interactionCreate', async interaction => {
     if (userId !== ADMIN_ID) {
       return interaction.reply({ content: '🚫 権限がありません。', ephemeral: true });
     }
-    await db.exec('DELETE FROM user_flowers; DELETE FROM user_xp;');
-    await interaction.reply('✅ データベースを初期化しました。');
+    await resetDb();
+    await interaction.reply('✅ Supabase上のデータベースを初期化しました。');
   }
 });
 
-// 花ガチャメッセージ反応
+// 💥 花ガチャ処理（キーワード反応）
 client.on('messageCreate', async message => {
   if (message.author.bot) return;
   if (message.channel.id !== ALLOWED_CHANNEL_ID) return;
@@ -108,7 +89,7 @@ client.on('messageCreate', async message => {
 
   const userId = message.author.id;
   const now = Date.now();
-  const cooldownAmount = 30 * 1000; // 30秒
+  const cooldownAmount = 30 * 1000;
 
   if (cooldowns.has(userId)) {
     const expirationTime = cooldowns.get(userId) + cooldownAmount;
@@ -117,18 +98,11 @@ client.on('messageCreate', async message => {
       return message.reply(`⌛ ガチャはあと ${timeLeft} 秒後に引けるよ！`);
     }
   }
-
   cooldowns.set(userId, now);
   setTimeout(() => cooldowns.delete(userId), cooldownAmount);
 
-  // --- 以下、元の処理まるごと移動 ---
   const flower = gacha();
-
-  try {
-    await db.run('INSERT OR IGNORE INTO user_flowers (userId, flowerId) VALUES (?, ?)', userId, flower.id);
-  } catch (e) {
-    console.error('DBエラー:', e);
-  }
+  await insertFlower(userId, flower.id);
 
   const xpMap = {
     rare: 10,
@@ -140,11 +114,7 @@ client.on('messageCreate', async message => {
   const gainedXp = xpMap[flower.rarity] || 0;
 
   if (gainedXp > 0) {
-    await db.run(`
-      INSERT INTO user_xp (userId, xp)
-      VALUES (?, ?)
-      ON CONFLICT(userId) DO UPDATE SET xp = xp + ?
-    `, userId, gainedXp, gainedXp);
+    await addXp(userId, gainedXp);
   }
 
   const embed = new EmbedBuilder()
@@ -156,6 +126,7 @@ client.on('messageCreate', async message => {
 
   await message.reply({ embeds: [embed] });
 
+  // ロール付与処理
   if (flower.rarity === 'extrasupermythic') {
     const member = await message.guild.members.fetch(userId);
 
