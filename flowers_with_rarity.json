@@ -1,0 +1,2606 @@
+[
+  {
+    "id": 1,
+    "name": "ネムノキ、ピンク",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 2,
+    "name": "コマクサ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 3,
+    "name": "ジャスミン",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 4,
+    "name": "シラン",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 5,
+    "name": "エゾエンゴサク",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 6,
+    "name": "アツモリソウ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 7,
+    "name": "ソメイヨシノ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 8,
+    "name": "エゾヤマザクラ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 9,
+    "name": "スイレン",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 10,
+    "name": "アジサイ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 11,
+    "name": "キク",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 12,
+    "name": "イブキトラノオ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 13,
+    "name": "カボチャ、黄",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 14,
+    "name": "キンシバイ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 15,
+    "name": "リシマキア",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 16,
+    "name": "ガーベラ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 17,
+    "name": "オオバコ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 18,
+    "name": "カキツバタ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 19,
+    "name": "サンセベリアの花",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 20,
+    "name": "ハクチョウゲ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 21,
+    "name": "レウコフィルム",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 22,
+    "name": "キュウリ、黄",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 23,
+    "name": "アピウム",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 24,
+    "name": "シンニンギア",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 25,
+    "name": "アカンサス",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 26,
+    "name": "アミメグサ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 27,
+    "name": "セイタカアワダチソウ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 28,
+    "name": "ヒューケラの花",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 29,
+    "name": "ニセアカシアの花",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 30,
+    "name": "アラマンダ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 31,
+    "name": "オオハンゴンソウ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 32,
+    "name": "オンシジウム（オンシジューム）",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 33,
+    "name": "シナノキの花",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 34,
+    "name": "カトレア",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 35,
+    "name": "オトギリソウ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 36,
+    "name": "アマリリス",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 37,
+    "name": "メカルドニア",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 38,
+    "name": "ジニア",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 39,
+    "name": "モクビャッコウの花",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 40,
+    "name": "イチゴ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 41,
+    "name": "シクラ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 42,
+    "name": "カーネーション",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 43,
+    "name": "パンパスグラス",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 44,
+    "name": "サギナ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 45,
+    "name": "ロフォミルタス",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 46,
+    "name": "キンセンカ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 47,
+    "name": "キリ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 48,
+    "name": "アデニウム",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 49,
+    "name": "アネモネ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 50,
+    "name": "エゾルリムラサキ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 51,
+    "name": "ウメ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 52,
+    "name": "クラリンドウ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 53,
+    "name": "カラスノエンドウ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 54,
+    "name": "ヤマボウシ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 55,
+    "name": "ハナトラノオ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 56,
+    "name": "ハマヒサカキ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 57,
+    "name": "キョウチクトウ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 58,
+    "name": "カンパニュラ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 59,
+    "name": "ヒドノフィツム",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 60,
+    "name": "シュンラン",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 61,
+    "name": "リューココリーネ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 62,
+    "name": "カタバミ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 63,
+    "name": "オオバナノエンレイソウ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 64,
+    "name": "フヨウ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 65,
+    "name": "スカシユリ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 66,
+    "name": "フリージア",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 67,
+    "name": "カントウタンポポ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 68,
+    "name": "ダイモンジソウ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 69,
+    "name": "レースフラワー",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 70,
+    "name": "アベリア",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 71,
+    "name": "オトメユリ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 72,
+    "name": "ミヤマキリシマ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 73,
+    "name": "クンシラン",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 74,
+    "name": "フジモドキ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 75,
+    "name": "フクシア",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 76,
+    "name": "ペラルゴニウム",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 77,
+    "name": "キタコブシ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 78,
+    "name": "アンゲロニア",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 79,
+    "name": "オオイヌノフグリ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 80,
+    "name": "金正日花",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 81,
+    "name": "トマト、黄",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 82,
+    "name": "レモンバーム（花穂）",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 83,
+    "name": "アヤメ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 84,
+    "name": "イヌサフラン",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 85,
+    "name": "ギニアアオイ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 86,
+    "name": "金日成花",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 87,
+    "name": "ブドウノハグサの花",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 88,
+    "name": "カイウ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 89,
+    "name": "アメジストセージ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 90,
+    "name": "ノゲシ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 91,
+    "name": "ラン",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 92,
+    "name": "フロックス",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 93,
+    "name": "オオガハス、ピンク",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 94,
+    "name": "シャスターデイジー",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 95,
+    "name": "タイタンビカス",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 96,
+    "name": "ブーゲンビリア",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 97,
+    "name": "ハギ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 98,
+    "name": "クロサンドラ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 99,
+    "name": "ポインセチア",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 100,
+    "name": "ホトケノザ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 101,
+    "name": "アザミ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 102,
+    "name": "オーニソガラム",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 103,
+    "name": "ルドベキア",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 104,
+    "name": "カノコユリ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 105,
+    "name": "ヤマアジサイ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 106,
+    "name": "テウクリウム",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 107,
+    "name": "モナルダ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 108,
+    "name": "カタクリ、紫・薄紫・桃色",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 109,
+    "name": "フウセンカズラ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 110,
+    "name": "スズカケノキの花",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 111,
+    "name": "ヨルガオ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 112,
+    "name": "カサブランカ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 113,
+    "name": "ヨウシュヤマゴボウ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 114,
+    "name": "カンサイタンポポ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 115,
+    "name": "タンポポ（蒲公英）、黄・白",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 116,
+    "name": "チリアヤメ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 117,
+    "name": "カラタネオガタマ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 118,
+    "name": "アルストロメリア",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 119,
+    "name": "コンボルブルス",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 120,
+    "name": "ミズバショウ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 121,
+    "name": "タデアイ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 122,
+    "name": "サフラン",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 123,
+    "name": "アサガオ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 124,
+    "name": "サンビタリア",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 125,
+    "name": "サボテンの花",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 126,
+    "name": "アルメリア",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 127,
+    "name": "バラ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 128,
+    "name": "サルスベリ（百日紅）",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 129,
+    "name": "ゴデチア",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 130,
+    "name": "ダルマギク",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 131,
+    "name": "コエビソウ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 132,
+    "name": "パンジー",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 133,
+    "name": "コケモモ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 134,
+    "name": "ヤシオツツジ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 135,
+    "name": "ヒメアヤメ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 136,
+    "name": "ナンテンハギ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 137,
+    "name": "コチョウラン",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 138,
+    "name": "ハナニラ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 139,
+    "name": "オトメアジサイ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 140,
+    "name": "フトモモ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 141,
+    "name": "カキ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 142,
+    "name": "トリカブト",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 143,
+    "name": "バンダ（青いラン）",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 144,
+    "name": "ツバキ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 145,
+    "name": "ロータス（蓮系）",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 146,
+    "name": "ヘレボラス",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 147,
+    "name": "コリウス",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 148,
+    "name": "トレニア",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 149,
+    "name": "カエデドコロ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 150,
+    "name": "チョウセンアサガオ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 151,
+    "name": "ミカン（温州みかん）",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 152,
+    "name": "フサフジウツギ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 153,
+    "name": "パラクロニウム",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 154,
+    "name": "トルコギキョウ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 155,
+    "name": "ゼフィランサス",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 156,
+    "name": "ブッソウゲ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 157,
+    "name": "ミムラス",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 158,
+    "name": "ウインターコスモス",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 159,
+    "name": "キャットテール",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 160,
+    "name": "ホテイアオイ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 161,
+    "name": "ハルジオン",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 162,
+    "name": "ナツズイセン",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 163,
+    "name": "ハナミズキ（花水木）、白・赤",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 164,
+    "name": "クサントソーマ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 165,
+    "name": "カリアンドラ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 166,
+    "name": "フジウツギ",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 167,
+    "name": "ナス、薄紫",
+    "rarity": "common",
+    "prob": 0.221557
+  },
+  {
+    "id": 168,
+    "name": "オキザリス",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 169,
+    "name": "ボタン、赤",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 170,
+    "name": "ネモフィラ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 171,
+    "name": "ウツボグサ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 172,
+    "name": "ルドベキア・タカオ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 173,
+    "name": "アマゾンユリ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 174,
+    "name": "テンニンギク",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 175,
+    "name": "ゲッカコウ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 176,
+    "name": "ボロニア",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 177,
+    "name": "ベニバナ、黄",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 178,
+    "name": "ワタスゲ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 179,
+    "name": "ライデンベルギア",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 180,
+    "name": "アカリファ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 181,
+    "name": "アリストロキア",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 182,
+    "name": "ディルの花",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 183,
+    "name": "ラベンダー",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 184,
+    "name": "マツバボタン",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 185,
+    "name": "アイビーゼラニウム",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 186,
+    "name": "アブラナ（菜の花）",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 187,
+    "name": "シュウメイギク",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 188,
+    "name": "シンフォリカルポス",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 189,
+    "name": "コニファー",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 190,
+    "name": "アフェランドラ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 191,
+    "name": "トケイソウ・ブルークラウン",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 192,
+    "name": "セロジネ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 193,
+    "name": "ホタルブクロ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 194,
+    "name": "ローダンセ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 195,
+    "name": "スズラン",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 196,
+    "name": "ハナハッカ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 197,
+    "name": "マンデビラ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 198,
+    "name": "ハナショウブ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 199,
+    "name": "ハマギク",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 200,
+    "name": "ボロニア2",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 201,
+    "name": "ムラサキサギゴケ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 202,
+    "name": "ライラック",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 203,
+    "name": "ニンニク",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 204,
+    "name": "リナリア",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 205,
+    "name": "モウセンゴケ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 206,
+    "name": "アルブカ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 207,
+    "name": "チャイブの花",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 208,
+    "name": "ヤマユリ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 209,
+    "name": "クロユリ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 210,
+    "name": "コブシ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 211,
+    "name": "クサノオウ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 212,
+    "name": "ヒガンバナ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 213,
+    "name": "ビワ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 214,
+    "name": "イキシア",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 215,
+    "name": "ミスミソウ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 216,
+    "name": "バウヒニア",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 217,
+    "name": "ブルグマンシア",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 218,
+    "name": "ムスカリ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 219,
+    "name": "リアトリス",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 220,
+    "name": "ペンタス",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 221,
+    "name": "ユキノシタ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 222,
+    "name": "ガザニア",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 223,
+    "name": "ヒマワリ、黄",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 224,
+    "name": "ヒメオドリコソウ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 225,
+    "name": "ノバラ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 226,
+    "name": "レブンウスユキソウ、白",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 227,
+    "name": "カラー",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 228,
+    "name": "ニラ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 229,
+    "name": "カランコエ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 230,
+    "name": "マツヨイグサ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 231,
+    "name": "スカビオサ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 232,
+    "name": "ムラサキケマン",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 233,
+    "name": "ラケナリア",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 234,
+    "name": "モクレン",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 235,
+    "name": "ユキヤナギ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 236,
+    "name": "ボケ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 237,
+    "name": "ザクロ（花）",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 238,
+    "name": "マーガレット",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 239,
+    "name": "ヤブカンゾウ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 240,
+    "name": "イソトマ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 241,
+    "name": "ワタ（綿花）",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 242,
+    "name": "ユウガオ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 243,
+    "name": "ハス（蓮）、薄紫",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 244,
+    "name": "ハマボウ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 245,
+    "name": "ノアザミ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 246,
+    "name": "シロツメクサ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 247,
+    "name": "オオニソガラム",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 248,
+    "name": "クロッカス",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 249,
+    "name": "ダイオウショウの花",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 250,
+    "name": "オリズルラン",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 251,
+    "name": "サツキ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 252,
+    "name": "コエンドロ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 253,
+    "name": "サザンカ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 254,
+    "name": "サフランモドキ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 255,
+    "name": "ビデンス",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 256,
+    "name": "テマリカンボク",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 257,
+    "name": "ジュズダマ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 258,
+    "name": "エラチオールベゴニア",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 259,
+    "name": "レンゲソウ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 260,
+    "name": "ボロニア・ピナータ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 261,
+    "name": "ネモトシャクナゲ⇒シャクナゲ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 262,
+    "name": "クマガイソウ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 263,
+    "name": "チランジア（エアプランツ）",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 264,
+    "name": "ヒナゲシ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 265,
+    "name": "パフィオペディルム（蘭の一種）",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 266,
+    "name": "ネジバナ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 267,
+    "name": "ベニシダレモミジの花",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 268,
+    "name": "ノコギリソウ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 269,
+    "name": "ヒカゲノカズラ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 270,
+    "name": "フクジュソウ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 271,
+    "name": "シモツケソウ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 272,
+    "name": "サラセニア",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 273,
+    "name": "ナズナ、白",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 274,
+    "name": "シクラメン",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 275,
+    "name": "スターチス",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 276,
+    "name": "ニワゼキショウ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 277,
+    "name": "ヒメジョオン",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 278,
+    "name": "ムクゲ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 279,
+    "name": "ヒルガオ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 280,
+    "name": "ドクゼリの花",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 281,
+    "name": "センリョウ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 282,
+    "name": "スノーフレーク（スズランズイセン）",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 283,
+    "name": "ヤナギタンポポ",
+    "rarity": "uncommon",
+    "prob": 0.232759
+  },
+  {
+    "id": 284,
+    "name": "ミカエリソウ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 285,
+    "name": "ダリア・ポンポン系",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 286,
+    "name": "アボニア",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 287,
+    "name": "ヤマブキ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 288,
+    "name": "ケイトウ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 289,
+    "name": "サギソウ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 290,
+    "name": "ドラセナの花",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 291,
+    "name": "ヒメツルソバ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 292,
+    "name": "デイジー",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 293,
+    "name": "イエロースター",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 294,
+    "name": "⇒ヒガンバナ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 295,
+    "name": "サルビア",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 296,
+    "name": "ニッコウキスゲ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 297,
+    "name": "ホオズキ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 298,
+    "name": "ハマナス、赤、白",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 299,
+    "name": "ダリア",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 300,
+    "name": "スプレーギク",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 301,
+    "name": "ホヤ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 302,
+    "name": "チゴユリ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 303,
+    "name": "シンビジウム（シンビジューム）",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 304,
+    "name": "リューカデンドロン",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 305,
+    "name": "ワビスケ（椿の一種）",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 306,
+    "name": "ザゼンソウ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 307,
+    "name": "ラナンキュラス",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 308,
+    "name": "リラ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 309,
+    "name": "ピーマン、白",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 310,
+    "name": "フキ（蕗の頭）",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 311,
+    "name": "コスモス",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 312,
+    "name": "アストランティア",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 313,
+    "name": "インパチェンス",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 314,
+    "name": "コウリンタンポポ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 315,
+    "name": "ジンチョウゲ（沈丁花）、赤",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 316,
+    "name": "カンナ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 317,
+    "name": "ミセバヤ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 318,
+    "name": "ルコウソウ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 319,
+    "name": "ハナズオウ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 320,
+    "name": "コエビソウ2",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 321,
+    "name": "スダチ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 322,
+    "name": "ギボウシ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 323,
+    "name": "ネギ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 324,
+    "name": "レウカンセマム",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 325,
+    "name": "プラティケリウムの花",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 326,
+    "name": "ハイビスカス",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 327,
+    "name": "ソテツの花",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 328,
+    "name": "ナガバユウゲショウ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 329,
+    "name": "ギンバイカ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 330,
+    "name": "イソギク",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 331,
+    "name": "ワスレナグサ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 332,
+    "name": "ベゴニア",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 333,
+    "name": "ツボサンゴ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 334,
+    "name": "ハクモクレン",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 335,
+    "name": "フジバカマ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 336,
+    "name": "ムギワラギク",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 337,
+    "name": "ブルーファンフラワー",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 338,
+    "name": "ナシ、白",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 339,
+    "name": "ネフロレピス",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 340,
+    "name": "クズ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 341,
+    "name": "シコンノボタン",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 342,
+    "name": "ワイルドフラワー",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 343,
+    "name": "チシマザクラ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 344,
+    "name": "サクラ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 345,
+    "name": "エリンジウム",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 346,
+    "name": "テッセン",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 347,
+    "name": "キンモクセイ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 348,
+    "name": "ナデシコ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 349,
+    "name": "フジ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 350,
+    "name": "ディアネラ",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 351,
+    "name": "ストレリチア（極楽鳥花）",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 352,
+    "name": "ヒヤシンス",
+    "rarity": "rare",
+    "prob": 0.231884
+  },
+  {
+    "id": 353,
+    "name": "ホルデューム",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 354,
+    "name": "ホルトノキの花",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 355,
+    "name": "ユーフォルビア",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 356,
+    "name": "リクニス",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 357,
+    "name": "マリーゴールド",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 358,
+    "name": "ニシキシダの花",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 359,
+    "name": "キバナコスモス",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 360,
+    "name": "ヨメナ",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 361,
+    "name": "マンジュシャゲ（曼珠沙華、彼岸花）、赤",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 362,
+    "name": "レンゲツツジ",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 363,
+    "name": "シクラメンコウ",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 364,
+    "name": "ホウセンカ（鳳仙花）",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 365,
+    "name": "ルピナス",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 366,
+    "name": "ムラサキハナナ",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 367,
+    "name": "ヒゴロモコンロンカ",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 368,
+    "name": "ツユクサ",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 369,
+    "name": "モモ",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 370,
+    "name": "ロベリア",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 371,
+    "name": "ヤグルマギク",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 372,
+    "name": "ヒオウギ",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 373,
+    "name": "ヒポエステスの花",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 374,
+    "name": "セイヨウタンポポ、黄・白",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 375,
+    "name": "ムラサキツユクサ",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 376,
+    "name": "エキナセア",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 377,
+    "name": "グズマニア",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 378,
+    "name": "ユリオプスデイジー",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 379,
+    "name": "クリ",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 380,
+    "name": "ワレモコウ",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 381,
+    "name": "ホトトギス",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 382,
+    "name": "シラユリ（白百合）",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 383,
+    "name": "ナギイカダの花",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 384,
+    "name": "グラジオラス",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 385,
+    "name": "ヤエザクラ",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 386,
+    "name": "ポピー、赤、ピンク、オレンジ",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 387,
+    "name": "ユキノシタ・ピンクエルフ",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 388,
+    "name": "ゼラニウム",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 389,
+    "name": "ミズヒキ",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 390,
+    "name": "ミヤギノハギ",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 391,
+    "name": "リンドウ（竜胆）、紫・青",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 392,
+    "name": "ベニカノコソウ",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 393,
+    "name": "ユキワリソウ",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 394,
+    "name": "ソバの花",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 395,
+    "name": "シモバシラ",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 396,
+    "name": "ネリネ",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 397,
+    "name": "スミレ",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 398,
+    "name": "タチアオイ",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 399,
+    "name": "クレマチス",
+    "rarity": "epic",
+    "prob": 0.234043
+  },
+  {
+    "id": 400,
+    "name": "ハエトリグサの花",
+    "rarity": "legend",
+    "prob": 0.238095
+  },
+  {
+    "id": 401,
+    "name": "ハンゲショウ",
+    "rarity": "legend",
+    "prob": 0.238095
+  },
+  {
+    "id": 402,
+    "name": "シャクナゲ",
+    "rarity": "legend",
+    "prob": 0.238095
+  },
+  {
+    "id": 403,
+    "name": "ホヤ・カルノーサ",
+    "rarity": "legend",
+    "prob": 0.238095
+  },
+  {
+    "id": 404,
+    "name": "マルバルコウソウ",
+    "rarity": "legend",
+    "prob": 0.238095
+  },
+  {
+    "id": 405,
+    "name": "スイセン",
+    "rarity": "legend",
+    "prob": 0.238095
+  },
+  {
+    "id": 406,
+    "name": "ルリムスカリ",
+    "rarity": "legend",
+    "prob": 0.238095
+  },
+  {
+    "id": 407,
+    "name": "リンゴ、白",
+    "rarity": "legend",
+    "prob": 0.238095
+  },
+  {
+    "id": 408,
+    "name": "ノボタン",
+    "rarity": "legend",
+    "prob": 0.238095
+  },
+  {
+    "id": 409,
+    "name": "アリウム",
+    "rarity": "legend",
+    "prob": 0.238095
+  },
+  {
+    "id": 410,
+    "name": "ユリ",
+    "rarity": "legend",
+    "prob": 0.238095
+  },
+  {
+    "id": 411,
+    "name": "サザンクロス",
+    "rarity": "legend",
+    "prob": 0.238095
+  },
+  {
+    "id": 412,
+    "name": "ユウゼンギク",
+    "rarity": "legend",
+    "prob": 0.238095
+  },
+  {
+    "id": 413,
+    "name": "グロリオサ",
+    "rarity": "legend",
+    "prob": 0.238095
+  },
+  {
+    "id": 414,
+    "name": "チューリップ",
+    "rarity": "legend",
+    "prob": 0.238095
+  },
+  {
+    "id": 415,
+    "name": "ビワモドキの花",
+    "rarity": "legend",
+    "prob": 0.238095
+  },
+  {
+    "id": 416,
+    "name": "ジギタリス",
+    "rarity": "legend",
+    "prob": 0.238095
+  },
+  {
+    "id": 417,
+    "name": "サクラソウ",
+    "rarity": "legend",
+    "prob": 0.238095
+  },
+  {
+    "id": 418,
+    "name": "シャクヤク",
+    "rarity": "legend",
+    "prob": 0.238095
+  },
+  {
+    "id": 419,
+    "name": "サンダーソニア",
+    "rarity": "legend",
+    "prob": 0.238095
+  },
+  {
+    "id": 420,
+    "name": "セイヨウウスユキソウ（エーデルワイス）",
+    "rarity": "legend",
+    "prob": 0.238095
+  },
+  {
+    "id": 421,
+    "name": "プセウドリプシスの花",
+    "rarity": "mythic",
+    "prob": 0.25
+  },
+  {
+    "id": 422,
+    "name": "ツツジ",
+    "rarity": "mythic",
+    "prob": 0.25
+  },
+  {
+    "id": 423,
+    "name": "タカサゴユリ",
+    "rarity": "mythic",
+    "prob": 0.25
+  },
+  {
+    "id": 424,
+    "name": "モッコウバラ",
+    "rarity": "mythic",
+    "prob": 0.25
+  },
+  {
+    "id": 425,
+    "name": "ヒゴタイ",
+    "rarity": "mythic",
+    "prob": 0.25
+  },
+  {
+    "id": 426,
+    "name": "バショウの花",
+    "rarity": "mythic",
+    "prob": 0.25
+  },
+  {
+    "id": 427,
+    "name": "デルフィニウム",
+    "rarity": "mythic",
+    "prob": 0.25
+  },
+  {
+    "id": 428,
+    "name": "センニチコウ",
+    "rarity": "mythic",
+    "prob": 0.25
+  },
+  {
+    "id": 429,
+    "name": "オオアマナ",
+    "rarity": "mythic",
+    "prob": 0.25
+  },
+  {
+    "id": 430,
+    "name": "ハコベ",
+    "rarity": "mythic",
+    "prob": 0.25
+  },
+  {
+    "id": 431,
+    "name": "キキョウ",
+    "rarity": "mythic",
+    "prob": 0.25
+  },
+  {
+    "id": 432,
+    "name": "トケイソウ",
+    "rarity": "mythic",
+    "prob": 0.25
+  },
+  {
+    "id": 433,
+    "name": "青の彼岸花",
+    "rarity": "extrasupermythic",
+    "prob": 0.5
+  },
+  {
+    "id": 434,
+    "name": "ピンクの彼岸花",
+    "rarity": "extrasupermythic",
+    "prob": 0.5
+  }
+]
