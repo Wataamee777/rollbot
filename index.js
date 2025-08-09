@@ -151,7 +151,7 @@ client.on('messageCreate', async message => {
 
   const embed = new EmbedBuilder()
     .setTitle('🌸 花ガチャ 結果！')
-    .setDescription(`${message.author} が引いた花：**${flower.name}**\nレアリティ：\`${flower.rarity}\`` +
+    .setDescription(`${message.author} が引いた花：番号:${flower.id} **${flower.name}**\nレアリティ：\`${flower.rarity}\`` +
                     (gainedXp > 0 ? `\n🎖️ 獲得XP：\`${gainedXp}\`` : ''))
     .setColor(0xffc0cb)
     .setTimestamp();
