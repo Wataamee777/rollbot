@@ -95,7 +95,7 @@ client.on('interactionCreate', async interaction => {
 const embed = new EmbedBuilder()
   .setTitle('🌸 花ガチャ 結果！')
   .setDescription(
-    `${message.author} が引いた花：**${flower.name}** (#${flower.id})\n` +
+    `${message.author} が引いた花：番号${flower.id} **${flower.name}** (#${flower.id})\n` +
     `レアリティ：\`${flower.rarity}\`` +
     (gainedXp > 0 ? `\n🎖️ 獲得XP：\`${gainedXp}\`` : '')
   )
