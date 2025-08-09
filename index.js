@@ -61,7 +61,6 @@ client.on('interactionCreate', async interaction => {
   if (interaction.commandName === 'list') {
   const { flowerIds } = await getStatus(interaction.user.id); // flowerIdsは配列
   const listText = flowerIds.sort((a,b) => a - b).join(', '); // IDだけ
-  const { flowerIds } = await getStatus(userId);
   const missingFlowers = flowers.filter(f => !flowerIds.includes(f.id));
     
   const embed = new EmbedBuilder()
