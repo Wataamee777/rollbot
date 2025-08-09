@@ -81,8 +81,7 @@ client.on('interactionCreate', async interaction => {
     .setColor(0xff9999);
 
   await interaction.reply({
-    embeds: [embed],
-    flags: 64
+    embeds: [embed]
   });
 }
 
