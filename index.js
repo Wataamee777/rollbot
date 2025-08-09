@@ -40,6 +40,7 @@ const client = new Client({
 const commands = [
   new SlashCommandBuilder().setName('status').setDescription('自分のガチャ状況を確認'),
   new SlashCommandBuilder().setName('resetdb').setDescription('（管理者専用）DBを全リセットする')
+  new SlashCommandBuilder().setName('list').setDescription('まだ持ってない花を一覧表示')
 ];
 const rest = new REST({ version: '10' }).setToken(TOKEN);
 await rest.put(Routes.applicationGuildCommands(CLIENT_ID, GUILD_ID), { body: commands });
@@ -57,6 +58,34 @@ function gacha() {
 
 // 🧾 スラッシュコマンド処理
 client.on('interactionCreate', async interaction => {
+  if (interaction.commandName === 'list') {
+  const { flowerIds } = await getStatus(interaction.user.id);
+
+  // まだ持ってない花を抽出
+  const missingFlowers = flowers.filter(f => !flowerIds.includes(f.id));
+
+  if (missingFlowers.length === 0) {
+    return interaction.reply({
+      content: '🎉 全部揃ってるよ！全クリおめでとう！',
+      flags: 64
+    });
+  }
+
+  const description = missingFlowers
+    .map(f => `🌸 **${f.name}** （${f.rarity}）`)
+    .join('\n');
+
+  const embed = new EmbedBuilder()
+    .setTitle(`${interaction.user.username} がまだ持ってない花`)
+    .setDescription(description)
+    .setColor(0xff9999);
+
+  await interaction.reply({
+    embeds: [embed],
+    flags: 64
+  });
+}
+
   if (!interaction.isChatInputCommand()) return;
   const userId = interaction.user.id;
 
