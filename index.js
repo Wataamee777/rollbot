@@ -59,17 +59,17 @@ function gacha() {
 // 🧾 スラッシュコマンド処理
 client.on('interactionCreate', async interaction => {
   if (interaction.commandName === 'list') {
-  const { flowerIds } = await getStatus(interaction.user.id);
+  const { flowerIds } = await getStatus(interaction.user.id); // flowerIdsは配列
+  const listText = flowerIds.sort((a,b) => a - b).join(', '); // IDだけ
 
-  // まだ持ってない花を抽出
-  const missingFlowers = flowers.filter(f => !flowerIds.includes(f.id));
+  const embed = new EmbedBuilder()
+    .setTitle(`${interaction.user.username} の所持花ID一覧`)
+    .setDescription(listText || '🌱 まだ花を持ってません')
+    .setColor(0x77ccff);
 
-  if (missingFlowers.length === 0) {
-    return interaction.reply({
-      content: '🎉 全部揃ってるよ！全クリおめでとう！',
-      flags: 64
-    });
-  }
+  await interaction.reply({ embeds: [embed]});
+}
+
 
   const description = missingFlowers
     .map(f => `🌸 **${f.name}** （${f.rarity}）`)
@@ -94,13 +94,15 @@ client.on('interactionCreate', async interaction => {
     const total = flowers.length;
     const percent = ((flowerIds.length / total) * 100).toFixed(2);
 
-    const embed = new EmbedBuilder()
-      .setTitle(`${interaction.user.username} のガチャ状況`)
-      .setDescription(`🌸 所持数: ${flowerIds.length} / ${total}（${percent}%）\n🎖️ XP: ${xp}`)
-      .setColor(0x77ccff);
-    await interaction.reply({
-      embeds: [embed]
-    });
+const embed = new EmbedBuilder()
+  .setTitle('🌸 花ガチャ 結果！')
+  .setDescription(
+    `${message.author} が引いた花：**${flower.name}** (#${flower.id})\n` +
+    `レアリティ：\`${flower.rarity}\`` +
+    (gainedXp > 0 ? `\n🎖️ 獲得XP：\`${gainedXp}\`` : '')
+  )
+  .setColor(0xffc0cb)
+  .setTimestamp();
 
   }
 
