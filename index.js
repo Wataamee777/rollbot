@@ -99,7 +99,7 @@ client.on('interactionCreate', async interaction => {
     await resetDb();
     await interaction.reply('✅ Supabase上のデータベースを初期化しました。');
   }
-};
+});
 
 // 💥 花ガチャ処理（キーワード反応）
 client.on('messageCreate', async message => {
