@@ -92,18 +92,6 @@ client.on('interactionCreate', async interaction => {
     const total = flowers.length;
     const percent = ((flowerIds.length / total) * 100).toFixed(2);
 
-const embed = new EmbedBuilder()
-  .setTitle('🌸 花ガチャ 結果！')
-  .setDescription(
-    `${message.author} が引いた花：番号${flower.id} **${flower.name}** (#${flower.id})\n` +
-    `レアリティ：\`${flower.rarity}\`` +
-    (gainedXp > 0 ? `\n🎖️ 獲得XP：\`${gainedXp}\`` : '')
-  )
-  .setColor(0xffc0cb)
-  .setTimestamp();
-
-  }
-
   if (interaction.commandName === 'resetdb') {
     if (userId !== ADMIN_ID) {
       return interaction.reply({ content: '🚫 権限がありません。', ephemeral: true });
