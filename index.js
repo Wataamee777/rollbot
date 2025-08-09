@@ -91,7 +91,7 @@ client.on('interactionCreate', async interaction => {
     const { flowerIds, xp } = await getStatus(userId);
     const total = flowers.length;
     const percent = ((flowerIds.length / total) * 100).toFixed(2);
-
+  }
   if (interaction.commandName === 'resetdb') {
     if (userId !== ADMIN_ID) {
       return interaction.reply({ content: '🚫 権限がありません。', ephemeral: true });
@@ -99,7 +99,7 @@ client.on('interactionCreate', async interaction => {
     await resetDb();
     await interaction.reply('✅ Supabase上のデータベースを初期化しました。');
   }
-});
+};
 
 // 💥 花ガチャ処理（キーワード反応）
 client.on('messageCreate', async message => {
