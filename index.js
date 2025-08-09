@@ -83,7 +83,6 @@ client.on('interactionCreate', async interaction => {
   await interaction.reply({
     embeds: [embed]
   });
-}
 
   if (!interaction.isChatInputCommand()) return;
   const userId = interaction.user.id;
