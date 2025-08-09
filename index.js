@@ -39,7 +39,7 @@ const client = new Client({
 // 🛠️ スラッシュコマンド登録
 const commands = [
   new SlashCommandBuilder().setName('status').setDescription('自分のガチャ状況を確認'),
-  new SlashCommandBuilder().setName('resetdb').setDescription('（管理者専用）DBを全リセットする')
+  new SlashCommandBuilder().setName('resetdb').setDescription('（管理者専用）DBを全リセットする'),
   new SlashCommandBuilder().setName('list').setDescription('まだ持ってない花を一覧表示')
 ];
 const rest = new REST({ version: '10' }).setToken(TOKEN);
