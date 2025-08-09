@@ -70,8 +70,7 @@ client.on('interactionCreate', async interaction => {
       .setDescription(`🌸 所持数: ${flowerIds.length} / ${total}（${percent}%）\n🎖️ XP: ${xp}`)
       .setColor(0x77ccff);
     await interaction.reply({
-      embeds: [embed],
-      flags: 64
+      embeds: [embed]
     });
 
   }
