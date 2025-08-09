@@ -40,7 +40,7 @@ const client = new Client({
 const commands = [
   new SlashCommandBuilder().setName('status').setDescription('自分のガチャ状況を確認'),
   new SlashCommandBuilder().setName('resetdb').setDescription('（管理者専用）DBを全リセットする'),
-  new SlashCommandBuilder().setName('list').setDescription('まだ持ってない花を一覧表示')
+  new SlashCommandBuilder().setName('list').setDescription('持っている花を一覧表示')
 ];
 const rest = new REST({ version: '10' }).setToken(TOKEN);
 await rest.put(Routes.applicationGuildCommands(CLIENT_ID, GUILD_ID), { body: commands });
@@ -92,13 +92,22 @@ client.on('interactionCreate', async interaction => {
     const total = flowers.length;
     const percent = ((flowerIds.length / total) * 100).toFixed(2);
   }
-  if (interaction.commandName === 'resetdb') {
-    if (userId !== ADMIN_ID) {
-      return interaction.reply({ content: '🚫 権限がありません。', ephemeral: true });
-    }
-    await resetDb();
-    await interaction.reply('✅ Supabase上のデータベースを初期化しました。');
+ if (interaction.commandName === 'resetdb') {
+  if (userId !== ADMIN_ID) {
+    return interaction.reply({ content: '🚫 権限がありません。', ephemeral: true });
   }
+
+  await interaction.deferReply({ ephemeral: true }); // すぐに応答保留を出す
+
+  try {
+    await resetDb();
+    await interaction.editReply('✅ Supabase上のデータベースを初期化しました。');
+  } catch (error) {
+    console.error('resetDb error:', error);
+    await interaction.editReply('❌ 初期化に失敗しました。管理者に連絡してください。');
+  }
+}
+
 });
 
 // 💥 花ガチャ処理（キーワード反応）
