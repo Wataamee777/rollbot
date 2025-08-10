@@ -60,30 +60,26 @@ function gacha() {
 client.on('interactionCreate', async interaction => {
   if (interaction.commandName === 'list') {
   const { flowerIds } = await getStatus(interaction.user.id); // flowerIdsは配列
-  const listText = flowerIds.sort((a,b) => a - b).join(', '); // IDだけ
+  const listText = flowerIds.sort((a, b) => a - b).join(', '); // IDだけ
+
+  // 持ってない花
   const missingFlowers = flowers.filter(f => !flowerIds.includes(f.id));
-    
-  const embed = new EmbedBuilder()
+
+  // 所持花ID一覧のEmbed
+  const embedOwned = new EmbedBuilder()
     .setTitle(`${interaction.user.username} の所持花ID一覧`)
     .setDescription(listText || '🌱 まだ花を持ってません')
     .setColor(0x77ccff);
 
-  await interaction.reply({ embeds: [embed]});
-}
-
-
-  const description = missingFlowers
-    .map(f => `🌸 **${f.name}** （${f.rarity}）`)
-    .join('\n');
-
-  const embed = new EmbedBuilder()
+  // 未所持花ID一覧（番号だけ）
+  const missingIds = missingFlowers.map(f => f.id).sort((a, b) => a - b).join(', ');
+  const embedMissing = new EmbedBuilder()
     .setTitle(`${interaction.user.username} がまだ持ってない花`)
-    .setDescription(description)
+    .setDescription(missingIds || '🎉 コンプリート済み！')
     .setColor(0xff9999);
 
-  await interaction.reply({
-    embeds: [embed]
-  });
+  await interaction.reply({ embeds: [embedOwned, embedMissing] });
+}
 
   if (!interaction.isChatInputCommand()) return;
   const userId = interaction.user.id;
