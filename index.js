@@ -58,55 +58,57 @@ function gacha() {
 
 // 🧾 スラッシュコマンド処理
 client.on('interactionCreate', async interaction => {
-  if (interaction.commandName === 'list') {
-  const { flowerIds } = await getStatus(interaction.user.id); // flowerIdsは配列
-  const listText = flowerIds.sort((a, b) => a - b).join(', '); // IDだけ
-
-  // 持ってない花
-  const missingFlowers = flowers.filter(f => !flowerIds.includes(f.id));
-
-  // 所持花ID一覧のEmbed
-  const embedOwned = new EmbedBuilder()
-    .setTitle(`${interaction.user.username} の所持花ID一覧`)
-    .setDescription(listText || '🌱 まだ花を持ってません')
-    .setColor(0x77ccff);
-
   if (!interaction.isChatInputCommand()) return;
+
   const userId = interaction.user.id;
 
-if (interaction.commandName === 'status') {
-  const { flowerIds, xp } = await getStatus(userId);
-  const total = flowers.length;
-  const percent = ((flowerIds.length / total) * 100).toFixed(2);
+  // /list
+  if (interaction.commandName === 'list') {
+    const { flowerIds } = await getStatus(userId);
+    const listText = flowerIds.sort((a, b) => a - b).join(', '); // IDだけ
 
-  const embed = new EmbedBuilder()
-    .setTitle(`${interaction.user.username} のステータス`)
-    .setDescription(
-      `🌸 所持数: ${flowerIds.length}/${total}\n` +
-      `📊 コンプリート率: ${percent}%\n` +
-      `🎖️ XP: ${xp}`
-    )
-    .setColor(0x00ff99);
+    const embedOwned = new EmbedBuilder()
+      .setTitle(`${interaction.user.username} の所持花ID一覧`)
+      .setDescription(listText || '🌱 まだ花を持ってません')
+      .setColor(0x77ccff);
 
-  await interaction.reply({ embeds: [embed] });
-}
-
- if (interaction.commandName === 'resetdb') {
-  if (userId !== ADMIN_ID) {
-    return interaction.reply({ content: '🚫 権限がありません。', ephemeral: true });
+    return interaction.reply({ embeds: [embedOwned] });
   }
 
-  await interaction.deferReply({ ephemeral: true }); // すぐに応答保留を出す
+  // /status
+  if (interaction.commandName === 'status') {
+    const { flowerIds, xp } = await getStatus(userId);
+    const total = flowers.length;
+    const percent = ((flowerIds.length / total) * 100).toFixed(2);
 
-  try {
-    await resetDb();
-    await interaction.editReply('✅ Supabase上のデータベースを初期化しました。');
-  } catch (error) {
-    console.error('resetDb error:', error);
-    await interaction.editReply('❌ 初期化に失敗しました。管理者に連絡してください。');
+    const embed = new EmbedBuilder()
+      .setTitle(`${interaction.user.username} のステータス`)
+      .setDescription(
+        `🌸 所持数: ${flowerIds.length}/${total}\n` +
+        `📊 コンプリート率: ${percent}%\n` +
+        `🎖️ XP: ${xp}`
+      )
+      .setColor(0x00ff99);
+
+    return interaction.reply({ embeds: [embed] });
   }
-}
 
+  // /resetdb
+  if (interaction.commandName === 'resetdb') {
+    if (userId !== ADMIN_ID) {
+      return interaction.reply({ content: '🚫 権限がありません。', ephemeral: true });
+    }
+
+    await interaction.deferReply({ ephemeral: true });
+
+    try {
+      await resetDb();
+      await interaction.editReply('✅ Supabase上のデータベースを初期化しました。');
+    } catch (error) {
+      console.error('resetDb error:', error);
+      await interaction.editReply('❌ 初期化に失敗しました。管理者に連絡してください。');
+    }
+  }
 });
 
 // 💥 花ガチャ処理（キーワード反応）
