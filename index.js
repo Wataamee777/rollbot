@@ -71,24 +71,26 @@ client.on('interactionCreate', async interaction => {
     .setDescription(listText || '🌱 まだ花を持ってません')
     .setColor(0x77ccff);
 
-  // 未所持花ID一覧（番号だけ）
-  const missingIds = missingFlowers.map(f => f.id).sort((a, b) => a - b).join(', ');
-  const embedMissing = new EmbedBuilder()
-    .setTitle(`${interaction.user.username} がまだ持ってない花`)
-    .setDescription(missingIds || '🎉 コンプリート済み！')
-    .setColor(0xff9999);
-
-  await interaction.reply({ embeds: [embedOwned, embedMissing] });
-}
-
   if (!interaction.isChatInputCommand()) return;
   const userId = interaction.user.id;
 
-  if (interaction.commandName === 'status') {
-    const { flowerIds, xp } = await getStatus(userId);
-    const total = flowers.length;
-    const percent = ((flowerIds.length / total) * 100).toFixed(2);
-  }
+if (interaction.commandName === 'status') {
+  const { flowerIds, xp } = await getStatus(userId);
+  const total = flowers.length;
+  const percent = ((flowerIds.length / total) * 100).toFixed(2);
+
+  const embed = new EmbedBuilder()
+    .setTitle(`${interaction.user.username} のステータス`)
+    .setDescription(
+      `🌸 所持数: ${flowerIds.length}/${total}\n` +
+      `📊 コンプリート率: ${percent}%\n` +
+      `🎖️ XP: ${xp}`
+    )
+    .setColor(0x00ff99);
+
+  await interaction.reply({ embeds: [embed] });
+}
+
  if (interaction.commandName === 'resetdb') {
   if (userId !== ADMIN_ID) {
     return interaction.reply({ content: '🚫 権限がありません。', ephemeral: true });
